@@ -1,11 +1,11 @@
-NAME	=	BraiiiiiiinnnzzzZ
+NAME	=	HI_THIS_IS_BRAIN
 
 CC		=	c++
 WFLAGS	=	-Wall -Wextra -Werror
 STDFLAG	=	-std=c++98
 FLAGS	=	$(WFLAGS) $(STDFLAG)
 
-SRCS	=	main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
+SRCS	=	main.cpp
 OBJS	=	$(SRCS:.cpp=.o)
 
 all: $(NAME)
@@ -27,5 +27,4 @@ fclean: clean
 
 re: fclean all
 
-$(OBJS): Zombie.hpp
 .PHONY: all clean fclean re
